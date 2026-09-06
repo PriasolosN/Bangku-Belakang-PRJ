@@ -1,0 +1,5 @@
+[
+null,
+{"id":1,"battlerName":"!01Kheil","characterIndex":0,"characterName":"01_Kheil","classId":1,"equips":[1,1,2],"faceIndex":0,"faceName":"Kheil","traits":[],"initialLevel":1,"maxLevel":1,"name":"Kheil","nickname":"","note":"","profile":""},
+{"id":2,"battlerName":"!01Kheil","characterIndex":0,"characterName":"02_Rendy","classId":1,"equips":[0,0,0],"faceIndex":0,"faceName":"Rendy","traits":[],"initialLevel":1,"maxLevel":1,"name":"Rendy","nickname":"","note":"","profile":""}
+]
