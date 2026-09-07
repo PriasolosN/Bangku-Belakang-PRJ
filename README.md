@@ -18,7 +18,7 @@ Developed      : Naufal Ahmad Arisani
 Engine Used    : RPGMV
 Assets         : modified assets of RPGMV
 ```
-<h3>Game size for now : 99MB📁</h3>
+<h3>Game size for now : 89MB📁</h3>
 
 ---
 
