@@ -43,7 +43,7 @@ Galv.LG = Galv.LG || {};      // Galv's stuff
  *   Galv's Layer Graphics
  * ----------------------------------------------------------------------------
  * Before you start, you will need to create a layers folder in your project.
- * /img/layers/
+ * /img/parallaxes/layers/
  * This is where all your layer images will be taken from.
  *
  * Each map can have many graphic layers, but be aware that the more you have,
@@ -84,7 +84,7 @@ Galv.LG = Galv.LG || {};      // Galv's stuff
  * MAPID        - the id of the map you are creating the layer for
  * ID           - the id of the layer itself. If you want to change or remove
  *              - an existing layer, you refer to it by it's id.
- * GRAPHIC      - The filename of the image found in /img/layers/
+ * GRAPHIC      - The filename of the image found in /img/parallaxes/layers/
  * XSPEED       - The speed of the horizontal movement. Negatives to go left
  * YSPEED       - The speed of the vertical movement. Negatives to go up
  * OPACITY      - Transparency of the image (0 - 255)
@@ -126,7 +126,7 @@ Galv.LG = Galv.LG || {};      // Galv's stuff
  * MAPID        - the id of the map you are creating the layer for
  * ID           - the id of the layer itself. If you want to change or remove
  *              - an existing layer, you refer to it by it's id.
- * GRAPHIC      - The filename of the image found in /img/layers/
+ * GRAPHIC      - The filename of the image found in /img/parallaxes/layers/
  * X            - The X position of the static layer image on the map.
  * Y            - The Y position of the static layer image on the map.
  * OPACITY      - Transparency of the image (0 - 255)
@@ -222,7 +222,7 @@ Galv.LG = Galv.LG || {};      // Galv's stuff
 // LAYER GRAPHIC FOLDER
 //-----------------------------------------------------------------------------
 ImageManager.loadLayerGraphic = function(filename, hue) {
-    return this.loadBitmap('img/layers/', filename, hue, true);
+    return this.loadBitmap('img/parallaxes/', filename, hue, true);
 };
 
 
@@ -285,7 +285,7 @@ Galv.LG.createLayer = function(config) {
 	
 	// create object
 	$gameMap.layerSettings[mapid][id] = {
-		graphic: config[2],                      // filename of the graphic in /img/layers/
+		graphic: config[2],                      // filename of the graphic in /img/parallaxes/layers/
 		xspeed: Galv.LG.num(config[3]),          // speed the layer will scroll horizontally
 		yspeed: Galv.LG.num(config[4]),          // speed the layer will scroll vertically
 		opacity: Galv.LG.num(config[5]),         // the opacity of the layer
@@ -312,7 +312,7 @@ Galv.LG.createLayerS = function(config) {
 	// create object
 	$gameMap.layerSettings[mapid][id] = {
 		static: true,               // determines static layer
-		graphic: config[2],         // filename of the graphic in /img/layers/
+		graphic: config[2],         // filename of the graphic in /img/parallaxes/layers/
 		x: Galv.LG.num(config[3]),          // speed the layer will scroll horizontally
 		y: Galv.LG.num(config[4]),          // speed the layer will scroll vertically
 		opacity: Galv.LG.num(config[5]),         // the opacity of the layer
@@ -338,7 +338,7 @@ Galv.LG.bLayer = function(id,graphic,xspeed,yspeed,opacity,z,blend) {
 
 	// create object
 	$gameSystem._bLayers[id] = {
-		graphic: graphic || '',         // filename of the graphic in /img/layers/
+		graphic: graphic || '',         // filename of the graphic in /img/parallaxes/layers/
 		xspeed: xspeed || 0,            // speed the layer will scroll horizontally
 		yspeed: yspeed || 0,            // speed the layer will scroll vertically
 		opacity: opacity || 0,          // the opacity of the layer
@@ -784,4 +784,3 @@ if (Imported.YEP_BattleEngineCore) {
 };
 
 })();
-
