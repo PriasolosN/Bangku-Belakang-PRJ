@@ -13,7 +13,8 @@ var $plugins =
 {"name":"No_ClickToGo","status":true,"description":"(v1.0) Mematikan pergerakan karakter lewat klik/touch di map, tapi tombol UI dan Menu tetap bisa diklik.","parameters":{"DisableSwitchId":"0"}},
 {"name":"Luna_TextSpeedControlMV","status":true,"description":"An extension to the core Message Window functionality\nto support Visual Novels <LunaTxtSpeedCntrl>.","parameters":{"Text Speed":"1","Allow Show Fast During Wait":"false"}},
 {"name":"NO_DialogueFastForward","status":true,"description":"(v1.0) Mematikan fitur fast-forward / mempercepat teks dialog saat menekan tombol atau klik.","parameters":{"DisableSwitchId":"0"}},
+{"name":"ScreenVignette","status":true,"description":"Membuat efek vignette (bayangan pinggiran layar) di RPG Maker MV.","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"MATH_QUIZ","status":true,"description":"Minigame matematika 3 variabel (dengan kurung) + tingkat kesulitan & SE custom.","parameters":{"ResultSwitch":"10","DefaultDifficulty":"medium","CorrectSE":"Item3","WrongSE":"Buzzer1","SEVolume":"70"}},
-{"name":"--------------------","status":true,"description":"------------------------------------------------------------","parameters":{}}
+{"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}}
 ];
